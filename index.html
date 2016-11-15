@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style>
+		div{border:1px solid #FFFFCC;margin: 0 auto;margin-top: 40px;}
+		span{float:left;width:30px;height:30px;margin:2px;border:1px solid #FFAA24;background:#fff}
+		span:hover{cursor:pointer}
+		.guan{background-color: #ddd;}
+		.kai{background-color: #006DBB;}
+	</style>
+	<body>
+	<p>开关灯游戏，点击某一个灯周围的灯会根据点击的反选，当所有的灯都开了就算获胜</p>
+	选择难度<select id="level" onchange="start()">
+		<option value="8">3级</option>
+		<option value="9">4级</option>
+		<option value="10">5级</option>
+		<option value="11">6级</option>
+		<option value="12">7级</option>
+		<option value="13">8级</option>
+		<option value="14">9级</option>
+		<option value="15">10级</option>
+		<option value="16">11级</option>
+		<option value="17">12级</option>
+		<option value="18">13级</option>
+	</select>
+	<input type="button" onclick="window.location.reload();" value="重玩">
+	<div id="cont">
+	</div>
+	</body>
+</html>
+<script src="js/j.js"></script>
+<script src="index.js"></script>
